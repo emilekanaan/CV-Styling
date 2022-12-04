@@ -1,0 +1,192 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    margin: auto;
+}
+
+header > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 15%;
+    color: red;
+    background-color: grey;
+    width: 100%;
+}
+
+h3::before{
+    content:"\01F534";
+    padding-right: 5px;
+}
+
+
+.content {
+    max-width: 1280px;
+    /* background-color: red; */
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1pc;
+    font-size: 1.2pc;
+}
+
+
+#about {
+    flex: 450px;
+    
+    padding-left: 4pc;
+}
+
+
+#competencies {
+    flex: 450px;
+    
+    padding-right: 4pc;
+}
+
+#experiences {
+    flex: 450px;
+    
+    padding-left: 4pc;
+}
+
+#education {
+    flex: 450px;
+    
+    padding-right: 4pc;
+}
+
+#hobbies{
+    flex: 450px;
+    padding-left: 4pc;
+    max-width: 45%;
+}
+
+section > h3 {
+    border-bottom: 2px solid rgb(200, 200, 200);
+    padding: 1pc;
+    
+}
+
+#about p {
+    padding: 1pc;
+}
+
+h4, p {
+    padding: 0 1pc;
+}
+
+.skills {
+    padding: 0 0 0 1pc;
+}
+
+.skills-primary::before {
+    content: "Main";
+}
+
+.skills-secondary::before {
+    content: "Other";
+
+}
+
+.skills-secondary {
+    margin-top: 1pc;
+    opacity: 0.8;
+}
+
+.skill {
+    background-color: grey;
+    margin: 3px 0;
+    padding: 10px;
+    color: white;
+
+}
+
+/* .skill > span {
+    background-color: red;
+    padding: 3px;
+    
+} */
+
+
+
+/* .skill[data-skill="50"]{
+    color: red;
+    
+    
+} */
+
+.experience-details {
+    padding: 0 2pc;
+    color: gray
+}
+
+.experience-date-separator {
+    color: red;
+}
+
+.experience-location::before {
+    content: "In";
+}
+
+#contact {
+    position: absolute;
+    top: -80px;
+    left: 48pc;
+    font-size: 1.01pc;
+}
+
+#contact > h3 {
+    transform: scale(0);
+}
+
+dl {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.contact-type {
+    width: 9pc;
+    background-color: red;
+    color: white;
+    padding: 2px;
+}
+
+.contact-value {
+    background-color: black;
+    width: 100pc;
+    color: red;
+    margin: 0;
+    padding: 2px 5px;
+}
+
+dd, a {
+    text-decoration: none;
+    color: red;
+}
+
+h4 {
+    margin-bottom: 5px;
+}
+.experience-type {
+    color: red;
+    font-weight: bold;
+    
+}
+
+.experience-institution {
+    color: red;
+    font-weight: lighter;
+}
+
+.experience-institution::before {
+    content: "@ ";
+    color: red;
+    font-weight: lighter;
+}
+
+h3, ul {
+    padding-left: 4pc;
+}
