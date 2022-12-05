@@ -1,14 +1,21 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
+}
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+    position: relative;
     margin: auto;
+    max-width: 1600px;
+    overflow-x: hidden;
 }
 
 header>div {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-left: 15%;
+    padding-left: 14%;
     color: red;
     background-color: grey;
     width: 100%;
@@ -103,19 +110,33 @@ p {
 
 }
 
-/* .skill > span {
+.skill span {
     background-color: red;
+    color: white;
+    display: inline-block;
     padding: 3px;
     
-} */
+}
 
+[data-skill="1"] span {
+    width: 10%;
+}
 
+[data-skill="3"] span {
+    width: 30%;
+}
 
-/* .skill[data-skill="50"]{
-    color: red;
-    
-    
-} */
+[data-skill="5"] span {
+    width: 50%;
+}
+
+[data-skill="7"] span {
+    width: 70%;
+}
+
+[data-skill="9"] span {
+    width: 90%;
+}
 
 .experience-details {
     padding: 0 2pc;
@@ -133,8 +154,11 @@ p {
 #contact {
     position: absolute;
     top: -80px;
-    left: 48pc;
+    right: 0pc;
     font-size: 1.01pc;
+    width: 50%;
+    margin-right: 0;
+    
 }
 
 #contact>h3 {
@@ -157,7 +181,7 @@ dl {
 
 .contact-value {
     background-color: black;
-    width: 100pc;
+    width: 80%;
     color: red;
     margin: 0;
     padding: 2px 5px;
@@ -198,7 +222,7 @@ ul {
 @media screen and (max-width: 1100px) {
     body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        
+        overflow-x: hidden;
         margin-top: 0;
     }
 
@@ -347,6 +371,12 @@ ul {
         content: "In";
     }
 
+    .contacts {
+        margin: 1pc;
+        display: block;
+        width: 200%;
+    }
+
     #contact {
         position: relative;
         top: 0;
@@ -356,10 +386,16 @@ ul {
     }
 
     #contact>h3 {
+        /* position: relative;
         transform: none;
-        width: 19%;
-        margin-left: 90px;
-        padding: 10px 0;
+        width: 180%;
+        margin-left: 100px;
+        padding: 10px 0; */
+        display: block;
+        position: relative;
+        transform: none;
+        left: 5.5pc;
+        width: 180%; 
         
     }
 
@@ -367,15 +403,16 @@ ul {
 
     dl {
         display: flex;
-        margin: auto;
+        margin: 0 90px;
         padding: 0;
-        width: 90%
+        width: 90%;
+        padding-left: 0 ;
 
     }
 
     .contact-type {
  
-        /* width: 118%; */
+        width: 50%;
         background-color: red;
         color: white;
         padding: 2px;
@@ -386,12 +423,14 @@ ul {
 
     .contact-value {
         background-color: white;
-        flex: 48%;
+        /* flex: 48%; */
         /* width: 100%; */
         color: red;
         margin: 0;
         padding: 2px 5px;
     }
+
+  
 
     dd,
     a {
