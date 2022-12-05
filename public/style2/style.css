@@ -20,6 +20,7 @@ figure img {
     left: 67%;
     top: 5pc;
     width: 13pc;
+    height: 13pc;
     transform: rotate(-15deg);
 }
 
@@ -42,7 +43,7 @@ figure img {
     background-color: #349999;
     margin: 5px;
     padding: 8px;
-    width: 130px;
+    width: 134px;
     color: white;   
 }
 
